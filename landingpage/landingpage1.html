@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0; 
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('travel1.jpg') ;
+            background-color: cover;
+            
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 1.6cm;
+            letter-spacing: 2px;
+            font-family:cursive;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size:20px;
+            position: relative;
+
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            width: 0%;
+            height:100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+
+        
+        }
+        
+        .menu a:hover:before{
+             width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size:20px;
+            background-color: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+
+        }
+        .register a:hover{
+             background: transparent;
+             border: 1px solid indianred;
+        }
+            .parth{
+                max-width: 650px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                color: white;
+            }
+            .parth span{
+                letter-spacing: 5px;
+
+            }
+            .parth h1{
+                font-size: 3.5em;
+            }
+            .parth a{
+                text-decoration: none;
+                background-color: indianred;
+                color: white;
+                padding: 10px 20px;
+                letter-spacing: 5px;
+            }
+            .parth a:hover{
+             background: transparent;
+             border: 1px solid indianred;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travelcation</div>
+            <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Hill Station</a>
+            <a href="#">Bestoffer</a>
+            <a href="#">oursites</a>
+            <a href="">contact</a>
+            </div>
+            <div class="register">
+                <a href="#">register</a>
+            </div>
+        </nav>
+        <section class="parth">
+            <span>Enjoy</span>
+            <h1>International travel Agency</h1>
+            <br>
+            <a href="#">Book Your Trip</a>
+        </section>
+
+    </header>
+
+    
+</body>
+</html>
